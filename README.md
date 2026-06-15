@@ -14,6 +14,14 @@ The system categorizes tickets into three classes:
 
 ---
 
+## Project Links
+
+**Hosted Streamlit Application:**
+https://invoker-20-support-integrity-auditor-app-wnmrwe.streamlit.app/
+
+**GitHub Repository:**
+https://github.com/Invoker-20/support-integrity-auditor
+
 # Methodology
 
 The proposed approach combines three independent severity estimation signals and a transformer-based classifier.
