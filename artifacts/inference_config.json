@@ -1,0 +1,61 @@
+{
+  "embedding_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "classifier_model_directory": "c:\\Users\\risha\\SIA_project\\artifacts\\deberta_mismatch_classifier",
+  "maximum_token_length": 256,
+  "signal_weights": {
+    "semantic": 0.45,
+    "rule": 0.4,
+    "resolution": 0.15
+  },
+  "priority_to_score": {
+    "Low": 0,
+    "Medium": 1,
+    "High": 2,
+    "Critical": 3
+  },
+  "score_to_priority": {
+    "0": "Low",
+    "1": "Medium",
+    "2": "High",
+    "3": "Critical"
+  },
+  "urgency_phrases": {
+    "account hacked": 1.8,
+    "stolen card": 1.8,
+    "fraud": 1.7,
+    "unauthorized": 1.7,
+    "security breach": 1.8,
+    "data breach": 1.8,
+    "data loss": 1.7,
+    "payment failed": 1.4,
+    "system down": 1.6,
+    "service down": 1.6,
+    "cannot access": 1.2,
+    "unable to access": 1.2,
+    "app crashing": 1.1,
+    "api error 500": 1.2,
+    "all users": 1.2,
+    "multiple users": 0.9,
+    "urgent": 0.8,
+    "immediately": 0.8,
+    "feature request": -1.2,
+    "product question": -1.0,
+    "demo request": -1.0,
+    "hours of operation": -1.0,
+    "office location": -1.0,
+    "how do i": -0.8,
+    "roadmap": -0.8,
+    "general inquiry": -0.7,
+    "cosmetic": -0.8,
+    "suggestion": -0.8
+  },
+  "category_adjustments": {
+    "Fraud": 0.8,
+    "Technical": 0.25,
+    "Account": 0.15,
+    "Billing": 0.1,
+    "General Inquiry": -0.45
+  },
+  "default_submission_month": 7,
+  "default_submission_day_of_week": 3
+}

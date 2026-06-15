@@ -1,0 +1,13 @@
+venv310/
+__pycache__/
+outputs/
+
+*.pyc
+*.pyo
+*.pyd
+
+.ipynb_checkpoints/
+
+test1.csv
+test100.csv
+customer_support_tickets_1000_random.csv

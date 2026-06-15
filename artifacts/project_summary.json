@@ -1,0 +1,51 @@
+{
+  "project_name": "Support Integrity Auditor",
+  "dataset_rows": 20000,
+  "pseudo_label_signals": [
+    "semantic_embedding_clustering",
+    "rule_based_nlp",
+    "resolution_time_regression"
+  ],
+  "signal_weights": {
+    "semantic": 0.45,
+    "rule": 0.4,
+    "resolution": 0.15
+  },
+  "classifier": "microsoft/deberta-v3-small",
+  "classifier_training": "full_fine_tuning",
+  "imbalance_strategy": "class_weighted_cross_entropy",
+  "confidence_threshold": 0.4,
+  "training_rows": 11404,
+  "validation_rows": 2444,
+  "test_rows": 2444,
+  "held_out_metrics": {
+    "accuracy": 0.9189852700490998,
+    "macro_f1": 0.906340797238951,
+    "macro_precision": 0.8943633941816214,
+    "consistent_recall": 0.9322268326417704,
+    "mismatched_recall": 0.9134224288204532
+  },
+  "pairwise_signal_agreement": [
+    {
+      "signal_pair": "semantic vs rule",
+      "exact_agreement": 0.4253,
+      "within_one_level": 0.8709,
+      "cohen_kappa": 0.1926
+    },
+    {
+      "signal_pair": "semantic vs resolution",
+      "exact_agreement": 0.2797,
+      "within_one_level": 0.7296,
+      "cohen_kappa": -0.0145
+    },
+    {
+      "signal_pair": "rule vs resolution",
+      "exact_agreement": 0.2682,
+      "within_one_level": 0.7268,
+      "cohen_kappa": -0.028
+    }
+  ],
+  "adversarial_score": 5,
+  "adversarial_total": 10,
+  "grounded_dossiers_validated": 1572
+}

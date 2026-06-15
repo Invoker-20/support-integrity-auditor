@@ -1,0 +1,24 @@
+{
+  "accuracy": 0.9189852700490998,
+  "macro_f1": 0.906340797238951,
+  "macro_precision": 0.8943633941816214,
+  "consistent_recall": 0.9322268326417704,
+  "mismatched_recall": 0.9134224288204532,
+  "threshold_results": {
+    "accuracy >= 0.83": true,
+    "macro_f1 >= 0.82": true,
+    "consistent_recall >= 0.78": true,
+    "mismatched_recall >= 0.78": true
+  },
+  "confusion_matrix": [
+    [
+      674,
+      49
+    ],
+    [
+      149,
+      1572
+    ]
+  ],
+  "validation_macro_f1": 0.9293442930366296
+}
